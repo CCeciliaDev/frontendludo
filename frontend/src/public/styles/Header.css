@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Prosto+One&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Andika&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&display=swap');
+
+.mainDivHeader {
+    background-color: #746C69;
+    /* background-color: #5D5552; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    /* color: white; */
+    width: 100%;
+    height: 10vh;
+    /* padding: 0px 20px; */
+    padding: 0.9em 0;
+    margin: 0;
+    position: sticky;
+    top: 1;
+  }
+
+  /* Logo */
+  .logoHeader {
+    width: 3.5em;
+    height: 3.5em;
+    margin-right: 0.5em;
+    /* transition: transform 0.3s ease-in-out; */
+    object-fit: contain;
+  }
+  /* .firstDivHeader:hover .logoHeader {
+    transform: rotate(12deg);
+  } */
+
+  /* DIV Logo et titres */
+  .firstDivHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 1em;
+    transition: transform 0.3s ease;
+  }
+  .firstDivHeader:hover {
+    transform: scale(0.95);
+  }
+
+  /* DIV Titres */
+  .secondDivHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 1em;
+  }
+  .divNameHeader {
+    border-bottom: 2px solid #4c897c;
+  }
+
+  /* Titre */
+  .titleHeader {
+    /* font-family: "Bangers", cursive; */
+    font-family: 'Prosto One', cursive;
+    /* letter-spacing: 0.2rem; */
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Sous titre */
+  .sstitleHeader {
+    /* font-family: "Bangers", cursive; */
+    font-family: 'Prosto One', cursive;
+    color: #CDC8C7;
+    letter-spacing: 0.2rem;
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Div navigation */
+  .divNavHeader {
+    display: flex;
+    flex-direction: row;
+    padding-right: 1em;
+  }
+  .homeLinkHeader {
+    text-decoration: none;
+    margin: 0px 10px;
+    color: white;
+    transition: 0.2s ease-in-out;
+  }
+
+  /* Liens de navigation */
+  .linkHeader {
+    /* font-family: 'Andika', sans-serif; */
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 1.15em;
+    text-decoration: none;
+    margin: 0px 10px;
+    /* color: #e9c46a; */
+    color: white;
+    transition: 0.2s ease-in-out;
+  }
+  .linkHeader:hover {
+    color: #d6955b;
+    /* transform: scale(1.1); */
+  }
+
+  /* Animation Liens */
+  .animLink {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    padding: 0 0.2em;
+    transition: 0.2s ease-in-out;
+  }
+  .animLink:hover {
+    color: #d6955b;
+  }
+  .animLink::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 1px;
+      background: #d6955b;
+      transition: width .3s;
+  }
+  .animLink:hover::after {
+      width: 100%;
+  }
+  
+/* Animation line patient */
+  .animLink2 {
+    text-decoration: none;
+    color: #9d9795;
+    position: relative;
+    overflow: hidden;
+    padding: 0 0.2em;
+    transition: 0.2s ease-in-out;
+  }
+  .animLink2:hover {
+    color: #4c897c;
+  }
+
+.burgerMenu {
+  display: none;
+}
+
+/* A FAIRE */
+@media (max-width: 800px) {
+  .mainDivHeader {
+    height: 20vh;
+    width: 100%;
+    flex-wrap: nowrap;
+  }
+  .sstitleHeader {
+    margin-top: 0.3em;
+  }
+  .logoHeader {
+    display: none;
+  }
+  .divNavHeader {
+    flex-direction: column;
+    width: 20%;
+  }
+  .animLink
+  .animLink2 {
+    margin: 0.1em 1em;
+  }
+  .linkHeader {
+    display: none;
+  } 
+  .burgerMenu {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 1em;
+  }
+}
+
+@media (max-width: 400px) {
+  .mainDivHeader {
+    flex-wrap: nowrap;
+    height: 20vh;
+  }
+  .firstDivHeader  {
+    width: 60%;
+  }
+  .sstitleHeader {
+    margin-top: 0.3em;
+  }
+  .logoHeader {
+    display: none;
+  }
+  .divNavHeader {
+    flex-direction: column;
+    width: 10%;
+  }
+  .animLink
+  .animLink2 {
+    margin: 0.1em 1em;
+  }
+  .linkHeader {
+    display: none;
+  } 
+  .burgerMenu {
+    display: flex;
+    justify-content: flex-end;
+  }
+}

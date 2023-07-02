@@ -1,0 +1,56 @@
+.mainDivLogin {
+  background-color: #E8E5E5;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+}
+.titleLogin {
+  font-size: 2em;
+  margin-top: 3em;
+  margin-bottom: 1em;
+  color: #4c897c;
+}
+.decoLogin {
+ height: 15%;
+ object-fit: contain;
+ transform: rotate(90deg);
+}
+.divInputLogin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.divInputLogin label {
+  margin-top: 1.5em;
+  margin-bottom: 0.4em;
+  color: #5d5552;
+  font-size: 1em;
+  width: 100%;
+  }
+.divInputLogin input {
+  color: #4c897c;
+  border: 1px solid gray;
+  border-radius: 15px;
+  padding: 0.5em 1em;
+}
+.buttonAdminLogin {
+  background-color: #4c897c;
+  width: 50%;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 0.5em 1em;
+  margin-top: 0.5em;
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+.buttonAdminLogin:hover {
+  background-color: #3b6d63;
+  transform: scale(0.98);
+}

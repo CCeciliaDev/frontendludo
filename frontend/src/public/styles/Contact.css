@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Prosto+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&display=swap");
+
+.mainDivContact {
+  background-image: url("../../assets/hexagon4.png");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.divPresContact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color : #E8E5E5;
+  padding: 2em 6em;
+  width: 50%;
+}
+/* Gestion des titres */
+.divTitleContact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  font-family: 'Prosto One', cursive;
+}
+/* TITRE */
+.divTitleContact h2 {
+  font-family: 'Prosto One', cursive;
+  font-size: 2em;
+  color: #4c897c;
+}
+.deco {
+  width: 12%;
+  height: auto;
+  object-fit: contain;
+  margin-right: 1em;
+}
+.divBox {
+  /* background-color: #fff; */
+  width: 90%;
+  height: auto;
+  padding: 30px;
+  border-radius: 5px;
+  /* border: 2px rgb(193, 188, 188) solid; */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 15px 15px 50px 15px;
+  display: flex;
+  flex-direction: column;
+}
+.infoDocto {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  color: #5D5552;
+  font-size: 1em;
+}
+/* DIV DOCTOLIB */
+.divBoxDocto {
+  align-items: center;
+  justify-content: center;
+}
+.divBoxDirect {
+  align-items: flex-start;
+}
+.contactInfo1 {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  color: #5D5552;
+  font-size: 0.9em;
+  font-style: italic;
+}
+.contactInfo2 {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  color: #5D5552;
+  font-size: 1em;
+  padding-left: 5em;
+  line-height: 200%;
+  margin-top: 1em;
+}
+.contactInfo3 {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  color: #5D5552;
+  font-size: 1em;
+  padding-left: 5em;
+  line-height: 200%;
+  margin-bottom: 1em;
+}
+
+.imgDoctolib {
+  height: 3em;
+  border-radius: 30px;
+  margin-top: 1em;
+  transition: all 0.3s ease;
+}
+.imgDoctolib:hover {
+  /* transform: scale(1.1); */
+  transform: scale(1.15, 1.05);
+}
+
+/* DIV CONTACT DIRECT */
+.divPresContact h3 {
+  font-family: 'Prosto One', cursive;
+  font-size: 1.5em;
+  color: #4c897c;
+  text-align: center;
+}
+.divPresContact h4 {
+  font-family: 'Prosto One', cursive;
+  font-size: 1.2em;
+  color: #d6955b;
+  text-align: center;
+  margin: 0.5em;
+}
+
+/* FORMULAIRE */
+.divFormContact {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  width: 90%;
+}
+.divPresContact h5 {
+  padding: 0;
+  margin: 0;
+  color: #d6955b;
+  text-align: center;
+  font-style: italic;
+  font-size: 1em;
+}
+.divPresContact label {
+  color: #5D5552;
+  display: block;
+  margin-top: 1rem;
+}
+.divPresContact input,
+.divPresContact textarea {
+  font-family: 'Fira Sans Condensed', sans-serif;
+
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.divPresContact textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+/* Boutton ENVOYER */
+.divButtonContact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.divPresContact button {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  background-color: #4c897c;
+  display: block;
+  margin-top: 1em;
+  padding: 1em 2em;
+  border: none;
+  border-radius: 30px;
+  font-size: 1em;
+  color: white;
+  cursor: pointer;
+}
+.divPresContact button:hover {
+  background-color: #d6955b;
+}
+.success-message {
+  margin-top: 1rem;
+  color: green;
+}
+.error-message {
+  color: red;
+  font-size: 0.8em;
+}
+
+@media (max-width: 800px) {
+  .divPresContact {
+    width: 75%;
+  }
+  .divPresContact h2 {
+    font-size: 1.6em;
+  }
+  .divPresContact h3 {
+    font-size: 1.2em;
+  }
+  .contactInfo1 {
+    padding: 0;
+  }
+  .contactInfo2 {
+    padding: 0;
+  }
+  .contactInfo3 {
+    padding: 0;
+  }
+  .divPresContact h5 {
+    text-align: left;
+  }
+}
+
+@media (max-width: 400px) {
+  .divPresContact {
+    width: 80%;
+  }
+  .divPresContact h2 {
+    font-size: 1.6em;
+    text-align: center;
+  }
+  
+  .divPresContact h3 {
+    font-size: 1.2em;
+    text-align: center;
+  }
+  .divBoxDocto {
+    box-shadow: none;
+    padding: 1em 0 1em 0;
+  }
+  .infoDocto {
+    line-height: 160%;
+    font-size: 1.2em;
+    margin: 0 0 1em 0;
+    text-align: center;
+  }
+  .divBoxDirect {
+    box-shadow: none;
+    padding: 1em 0 0 0;
+  }
+  .contactInfo1 {
+    font-size: 1.1em;
+  }
+  .contactInfo2 {
+    font-size: 1.1em;
+  }
+  .contactInfo3 {
+    font-size: 1.1em;
+  }
+}

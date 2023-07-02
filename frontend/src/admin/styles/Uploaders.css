@@ -1,0 +1,57 @@
+
+
+/* .inputUpload {
+  background-color: grey;
+  width: 20%;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 0.2em 0.5em;
+  margin: 0 0.5em;
+  margin-top: 0.5em;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+} */
+
+.buttonUpload {
+  background-color: #d6955b;
+  width: 20%;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 0.2em 0.5em;
+  margin: 0 0.5em;
+  margin-top: 0.5em;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+/* cacher le bouton "Parcourir" */
+.inputUpload::-webkit-file-upload-button {
+  display: none;
+}
+
+/* créer un bouton personnalisé */
+.inputUpload::before {
+  width: 20%;
+  content: 'Choisir un fichier';
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  padding: 8px 16px;
+  background-color: #5394A5;
+  border-radius: 15px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+} 
+
+
+.buttonUpload:hover {
+  background-color: #ce8341;
+}
+

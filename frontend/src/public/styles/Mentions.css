@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Prosto+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&display=swap');
+
+.mainDivML {
+  height: auto;
+}
+.divML {
+  font-family: 'Prosto One', cursive;
+  width: 80%;
+  margin: 1em auto;
+
+}
+.divML h3 {
+  color: #d6955b;
+  font-size: 1.5em;
+}
+.divML h4 {
+  color: #4c897c;
+  font-size: 1em;
+  margin: 1.5em 0 1em 0em;
+  border-bottom: 1px #4c897c solid;
+}
+.divML p {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 0.9em;
+  line-height: 150%;
+}

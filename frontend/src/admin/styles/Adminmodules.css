@@ -1,0 +1,176 @@
+.adminPage {
+  /* text-align: center; */
+  padding-bottom: 2em;
+  padding-left: 20%;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.adminPage h3 {
+  background-color: #CDC8C7;
+  border-radius: 20px;
+  width: 100%;
+  text-align: center;
+  margin-top: 1.5em;
+  margin-bottom: 2em;
+  padding: 0.3em;
+}
+.adminPage h4 {
+  background-color: #e8e6e6;
+  /* border-bottom: 1px solid black; */
+  width: 100%;
+  text-align: center;
+  /* margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  padding: 0.3em; */
+}
+
+.adminPage form {
+  display: grid;
+  gap: 1rem;
+}
+
+.adminPage input,
+.adminPage textarea,
+.adminPage select {
+  display: block;
+  width: 100%;
+}
+
+.adminPage input[type="checkbox"] {
+  display: inline-block;
+  width: auto;
+}
+
+.adminPage label {
+  color: #1f1b68;
+  display: block;
+  width: 100%;
+  background-color: #dae6ed;
+  border-radius: 20px;
+  padding-left: 1em;
+}
+
+.adminPage table {
+  width: 100%;
+}
+
+.divList {
+  line-height: 1.5;
+}
+
+.pWarning {
+  color: red;
+  margin-bottom: 1em;
+}
+
+/* Checkbox Archivé */
+.containArchived {
+display: flex;
+align-items: center;
+}
+
+/* Boutons Ajouter / Mettre à jour */
+.containButton {
+  text-align: center;
+}
+
+.addButton {
+  background-color: #5394A5;
+  width: 50%;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 0.5em 1em;
+  margin-top: 0.5em;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.addButton2 {
+  background-color: #5394A5;
+  width: 60%;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 0.5em 1em;
+  margin: 0 1em;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.suppButton {
+  background-color: #D6955B;
+  width: 30%;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 0.5em 1em;
+  margin: 0 0.5em;
+  margin-top: 0.5em;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.annulButton {
+  background-color: #5394A5;
+  width: 30%;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 0.5em 1em;
+  margin: 0 0.5em;
+  margin-top: 0.5em;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.addButton:hover {
+  background-color: grey;
+}
+
+.success-message {
+  color: green;
+  font-weight: bold;
+}
+
+/* Preview image upload */
+.previewImage {
+ height: 10em;
+ width: 10em;
+ object-fit: cover;
+}
+
+/* Image des article */
+.imgArticle {
+  height: 10em;
+  width: 10em;
+  object-fit: cover;
+}
+
+/* ---------- REACT-QUILL ---------- */
+.react-quill {
+  width: 80%;
+  color: black;
+}
+
+.quill-editor .ql-container {
+  height: 200px;
+}
+
+
+
+@media (max-width: 560px) {
+  .adminPage {
+    width: 100%;
+    margin: 0 auto;
+  }
+}

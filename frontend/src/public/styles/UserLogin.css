@@ -1,0 +1,82 @@
+.mainDivUserLogin {
+  background-image: url("../../assets/hexagon4.png");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.divPresUserLogin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color : #E8E5E5;
+  padding: 2em 6em;
+  width: 50%;
+  height: 75vh;
+}
+.divPresUserLogin h4 {
+  font-size: 1em;
+  color: #4c897c;
+  padding-top: 3em;
+}
+.divInputUser {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.divInputUser label {
+margin-top: 1.5em;
+margin-bottom: 0.4em;
+color: #5d5552;
+font-size: 1em;
+}
+.divInputUser input {
+  color: #4c897c;
+  border: 1px solid gray;
+  border-radius: 15px;
+  padding: 0.5em 1em;
+}
+.divVisibility {
+  display: flex;
+  flex-direction: row;
+}
+.visibilyPassword {
+position: relative;
+top: -23px;
+right: -164px;
+}
+.divButtonSpaces {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.enterButton {
+  background-color: #5394A5;
+  width: 50%;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 0.5em 1em;
+  margin-top: 0.5em;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.errorMessageUser {
+  margin-top: 1em;
+  font-size: 1em;
+  color: #a53a5e;
+}
+
+@media (max-width: 800px) {
+  .divPresUserLogin {
+    width: 75%;
+  }
+}
+
+@media (max-width: 400px) {
+  .divPresUserLogin {
+    width: 70%;
+  }
+}

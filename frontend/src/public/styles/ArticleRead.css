@@ -1,0 +1,115 @@
+.mainDivArticle {
+  background-image: url("../../assets/hexagon4.png");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.divPresArticle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color : #E8E5E5;
+  padding: 2em 6em;
+  width: 50%;
+  min-height: 75vh;
+}
+.divPresArticle .pDate {
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #837c79;
+  ;
+}
+.divTextArticleRead {
+  background-color: #fff;
+  width: 90%;
+  height: auto;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.divTextArticleRead img {
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 1em;
+  margin-top: 2em;
+}
+.divTextArticleRead h2 {
+  text-align: center;
+  font-family: 'Prosto One', cursive;
+  font-size: 1.8em;
+  color: #4c897c;
+  margin: 0.6em 0 0 0;
+  padding: 0 1em;
+}
+
+.divTextArticleRead p {
+  text-align: justify;
+  padding: 0 1em;
+  margin: 1.2em 0;
+  font-size: 1em;
+  line-height: 1.5;
+  color: #5D5552;
+
+}
+.pPresArticle a {
+text-decoration: underline;
+color: #4c897c;
+}
+/* Retour Liste Articles */
+.divBackArrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+    align-items: center;
+}
+.linkArrow {
+  padding-right: 0.5em;
+}
+.linkText {
+  text-decoration: none;
+  color: #4c897c;
+  transition: all 0.2s;;
+}
+.linkText:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 800px) {
+  .divPresArticle {
+    width: 75%;
+  }
+  .divPresAbout h2 {
+    font-size: 1.6em;
+  }
+  .divPresAbout h3 {
+    font-size: 1.2em;
+  }
+  .divPresArticle p {
+    font-size: 1.2em;
+    text-align: left;
+  }
+}
+@media (max-width: 400px) {
+  .divPresArticle {
+    width: 80%;
+  }
+  .divPresArticle img {
+    width: 75%;
+  }
+  .divPresArticle p {
+    font-size: 1.2em;
+    text-align: left;
+  }
+  .divTextArticleRead {
+    width: 100%;
+    padding: 20px;
+
+  }
+}

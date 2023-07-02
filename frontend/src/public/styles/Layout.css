@@ -1,0 +1,22 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  flex: 0 0 auto; /* L'élément n'est ni compressible ni étirable */
+  position: sticky;
+  top: 0;
+}
+
+.footer {
+  flex: 0 0 auto; /* L'élément n'est ni compressible ni étirable */
+}
+
+.outlet {
+  flex: 1 0 auto; /* L'élément est étirable, mais pas compressible */
+  overflow: auto; /* Pour permettre le défilement si nécessaire */
+}

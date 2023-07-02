@@ -1,0 +1,129 @@
+  /* Main div */
+  .divArticleCard {
+    display: flex;
+    flex-direction: column; 
+    background-color: #fafafa;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    width: 100%;
+    height: 30vh;
+    }
+  .divFlexArticleCard {
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+  }
+  .divTextArticle {
+    width: 70%;
+    padding-right: 2em;
+    flex-grow: 1;
+    overflow: hidden;
+  }
+  /* TITRE */
+  .divTextArticle h2 {
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #4c897c;
+  }
+  
+  /* DATE */
+  .divTextArticle h6 {
+    color: #bdb8b6;
+    margin-bottom: 10px;
+    margin-top: 6px;
+    font-size: 0.8em;
+    line-height: 1.5;
+  }
+
+  /* TEXTE */
+  .divTextArticle p {
+    width: 100%;
+    text-align: justify;
+    /* height: 75px;  */
+    padding: 0;
+    margin: 10px 0;
+    font-size: 0.9em;
+    line-height: 1.3;
+    color: #5D5552;
+    overflow: hidden;
+  }
+  .divTextArticle a {
+    text-decoration: none;
+    color: #5D5552;
+  }
+
+  /* IMAGE */
+  .divImgArticle {
+    width: 30%;
+    height: 50vh;
+    margin: 0;
+    padding: 0;
+  }
+  .imgArticleCard {
+    width: 100%;
+    height: 50%;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+
+  /* Lien "Lire" */
+  .divButtonArticleCard {
+    display: flex;
+    justify-content: center;
+  }
+  .buttonArticleCard {
+    display: inline-block;
+    width: 60px;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #4c897c;
+    border: 0px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .buttonArticleCard:hover {
+    background-color: #d6955b;
+  }
+
+  @media (max-width: 400px) {
+    .divArticleCard {
+      height: 250px;
+      padding: 20px;
+    }
+    .divArticleCard h2 {
+      font-size: 1.7em;
+      text-align: center;
+    }
+    .imgArticleCard {
+      display: none;
+    }
+    .divTextArticle {
+      font-size: 1.05em;
+    }
+    .divButtonArticleCard {
+      font-size: 1.2em;
+    }
+    .divFlexArticleCard {
+      width: 160%;
+    }
+    .divTextArticle h6 {
+      text-align: center;
+    }
+    .divTextArticle p {
+      text-align: center;
+      font-size: 1em;
+    }
+  }

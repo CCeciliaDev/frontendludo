@@ -1,0 +1,217 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Allura&display=swap'); */
+@import url("https://fonts.googleapis.com/css2?family=Prosto+One&display=swap");
+/* @import url('https://fonts.googleapis.com/css2?family=Andika&display=swap'); */
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&display=swap");
+
+/* MAIN DIV */
+.mainDivHome {
+  background-image: url("../../assets/hexagon4.png");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* DIV CONTAINER GLOBALE */
+.divPresHome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #d7d5d4; */
+  background-color: #E8E5E5;
+  padding: 2em 6em;
+  animation: zoom 2s ease-in-out forwards;
+  width: 50%;
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(0.7);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* LIGNE MON */
+.mainDivHome h2 {
+  font-family: 'Prosto One', cursive;
+  font-size: 3.2em;
+  color: #4c897c;
+  padding: 0;
+  margin: 0.8em 0 0.2em 0;
+}
+
+/* LIGNE PSYCHOLOGUE */
+.mainDivHome p {
+  font-family: 'Prosto One', cursive;
+  font-size: 1.8em;
+  font-weight: bold;
+  padding: 0;
+  /* margin: 0 0 2em 0; */
+  margin: 0;
+  color: #5d5552;
+  animation-delay: 2s;
+  text-align: center;
+}
+
+/* LIGNE BIENVENUE */
+.mainDivHome h4 {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 1.6em;
+  color: #d6955b;
+  padding: 2em 0 0 0;
+  margin: 0;
+}
+
+/* LIGNE INVITATION A VISITER */
+.mainDivHome h5 {
+  color: #7c7471;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 1.1em;
+  padding: 0;
+  margin: 0.5em 0 0.5em 0;
+}
+
+/* LIENS LIGNE INVITATION A VISITER */
+.Hlink {
+  text-decoration: none;
+  color: #7c7471;
+  position: relative;
+  overflow: hidden;
+  padding: 0 0.2em;
+  transition: 0.2s ease-in-out;
+}
+.Hlink:hover {
+  color: #4c897c;
+}
+.Hlink::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: #4c897c;
+  transition: width 0.3s;
+}
+.Hlink:hover::after {
+  width: 100%;
+}
+
+/* ANIMATION PLANTES ET GALETS */
+.imgPlant {
+  width: 70%;
+  height: auto;
+  object-fit: contain;
+}
+.divImg {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  margin: auto;
+}
+.divImg {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  margin: auto;
+}
+
+.divImg img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+.plant2 {
+  /* Galet orange */
+  animation: animation1 5s linear infinite;
+  /* transform: translate(120px, 50%); */
+}
+
+.plant3 {
+  /* Galet taupe */
+  animation: animation2 4s linear infinite;
+  /* transform: translate(120px, 50%); */
+}
+
+.plant4 {
+  /* Galet vert */
+  animation: animation3 7s linear infinite;
+  /* transform: translate(120px, 50%); */
+}
+
+@keyframes animation1 {
+  0%, 100% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+}
+
+@keyframes animation2 {
+  0%, 100% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes animation3 {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+}
+
+@keyframes animation4 {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+}
+
+@media (max-width: 560px) {
+  .mainDivHome h2 {
+    text-align: center;
+  }
+  .mainDivHome p {
+    text-align: center;
+    padding-top: 0.5em;
+    border-top: 1px solid #5d5552;
+  }
+  .divWelcomeTextHome {
+    text-align: center;
+    margin-bottom: 2em;
+  }
+  .divTextHome {
+    width: 160%;
+    text-align: center;
+  }
+  .divTextHome h5 {
+    font-size: 1.4em;
+  }
+  .divImg {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+  }
+}

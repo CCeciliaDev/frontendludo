@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Prosto+One&display=swap');
+
+/* Main div */
+ .mainDivPlaceCard {
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-around;
+  align-items: center;
+  /* background-color: #fafafa; */
+  padding: 30px;
+  /* border-radius: 5px; */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 1em;
+  width: 90%;
+  height: auto;
+  /* border-bottom: 2px solid #746C69; */
+  /* border-right: 2px solid #5D5552; */
+  /* border-right: 2px solid #746C69; */
+  }
+
+.divDescPlaceCard {
+  display: flex;
+  flex-direction: column;
+  /* border-bottom: 2px solid #746C69;
+  border-top: 2px solid #746C69;
+  padding: 1em 0em; */
+}
+
+/* TITRE */
+.titlePlaceCard {
+  font-family: 'Prosto One', cursive;
+  margin: 0;
+  padding: 0 0 0.5em 0;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #4c897c;
+ 
+}
+.divDescPlaceCard p {
+  padding: 0;
+  margin: 0;
+  font-size: 1em;
+  color: #5D5552;
+}
+.mainDivPlaceCard img {
+  width: 19vw;
+  height: 13vw;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+@media (max-width: 400px) {
+  .mainDivPlaceCard {
+    width: 110%;
+  }
+  .mainDivPlaceCard img  {
+    width: 60vw;
+    height: 25vw;
+    margin-top: 1em;
+  }
+  .divDescPlaceCard {
+    width: 100%;
+}
+  .divDescPlaceCard p {
+    font-size: 1.4em;
+  }
+}

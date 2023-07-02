@@ -1,0 +1,133 @@
+.mainDivArticles {
+    background-image: url("../../assets/hexagon4.png");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+.divPresArticles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color : #E8E5E5;
+  padding: 2em 6em;
+  width: 50%;
+}
+/* Gestion des titres */
+.divTitleArticles {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  font-family: 'Prosto One', cursive;
+}
+/* TITRE */
+.divPresArticles h3 {
+  font-family: 'Prosto One', cursive;
+  font-size: 2em;
+  color: #4c897c;
+}
+.deco {
+  width: 12%;
+  height: auto;
+  object-fit: contain;
+  margin-right: 1em;
+}
+.infoArticles {
+  font-style: italic;
+  font-size: 1em;
+  margin-bottom: 1rem;
+}
+
+/* Bouttons de sélection */
+.themesContainer {
+  margin-bottom: 1em;
+}
+#buttonAllThemes {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  background-color: #5D5552;
+  color: white;
+  padding: 0.3em 0.8em;
+  margin: 0 0.5em;
+  border-radius: 15px;
+  border: none;
+  transition: all 0.3s ease;
+}
+#buttonAllThemes:hover {
+  background-color: #4c897c;
+  transform: scale(1.05);
+}
+#buttonUniqueTheme {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  background-color: #817f7e;
+  color: white;
+  padding: 0.3em 0.8em;
+  margin: 0 0.5em;
+  border-radius: 15px;
+  border: none;
+  transition: all 0.3s ease;
+}
+#buttonUniqueTheme:hover {
+  background-color: #4c897c;
+  transform: scale(1.05);
+}
+
+  .divFlexArticles {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+
+ /* Pagination */
+.paginationArticle {
+  background-color: #D7D5D4;
+  /* border-radius: 50%; */
+  border: 1px solid #5D5552;
+  padding: 0.1em 0.4em;
+  margin: 0 0.5em;
+  cursor: pointer;
+  color: #5D5552;
+  font-weight: bold;
+  font-size: 1em;
+}
+.paginationArticle:hover {
+  transform: scale(1.2);
+  color: #4c897c;
+}
+
+
+@media (max-width: 800px) {
+  .divPresArticles {
+    width: 75%;
+  }
+  .divPresArticles h2 {
+    font-size: 1.6em;
+  }
+  .divPresArticles h3 {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 400px) {
+  .divPresArticles {
+    width: 80%;
+  }
+
+  .divPresArticles h3 {
+    font-size: 1.6em;
+    text-align: center;
+  }
+  .themesContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  #buttonAllThemes {
+    margin: 0.5em;
+  }
+  #buttonUniqueTheme {
+    margin-bottom: 0.5em;
+  }
+}

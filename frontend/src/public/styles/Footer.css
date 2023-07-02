@@ -1,0 +1,33 @@
+.mainDivFooter {
+  background-color: #746C69;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 5vh;
+  color: white;
+  font-size: 0.85em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.mainDivFooter p {
+  margin: 0px 5px;
+  padding: 0;
+}
+.Flink {
+  text-decoration: none;
+  color: white;
+}
+
+@media (max-width: 560px) {
+  .mainDivFooter {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 430px) {
+  .separator {
+    display: none;
+  }
+}
